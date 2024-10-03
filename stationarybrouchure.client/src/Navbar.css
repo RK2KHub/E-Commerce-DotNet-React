@@ -1,0 +1,56 @@
+/* Styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Styles for the button menu */
+.navbar-menu {
+    display: flex; /* Align items in a row */
+}
+
+/* Styles for buttons */
+.navbar-button {
+    background-color: #ff6347; /* Button background color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+    .navbar-button:hover {
+        background-color: #ff4500; /* Darker shade on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .navbar-button {
+        margin: 5px 0; /* Reduce margin for stacked buttons */
+        width: 100%; /* Full width for buttons */
+        text-align: center; /* Center text */
+    }
+}

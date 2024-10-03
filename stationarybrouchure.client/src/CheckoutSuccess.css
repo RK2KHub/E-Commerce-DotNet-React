@@ -1,0 +1,18 @@
+.checkout-success {
+    text-align: center;
+    padding: 50px;
+    background-color: #e6ffe6;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .checkout-success h2 {
+        color: #28a745;
+    }
+
+    .checkout-success p {
+        font-size: 18px;
+        color: #333;
+    }

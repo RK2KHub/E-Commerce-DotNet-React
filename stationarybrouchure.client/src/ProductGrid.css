@@ -1,0 +1,65 @@
+/* Styles for the product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-fill columns with a minimum width */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+    width: 100%; /* Ensure the grid takes the full width */
+    height: 100vh; /* Fill the height of the viewport */
+}
+
+/* Styles for individual product cards */
+.product-card {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+    /* Hover effects for product cards */
+    .product-card:hover {
+        transform: scale(1.05); /* Scale effect on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+
+    /* Styles for product images */
+    .product-card img {
+        max-width: 100%; /* Ensure image doesn't overflow */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for images */
+        transition: transform 0.3s; /* Transition for image scaling */
+    }
+
+    /* Scale image slightly on hover */
+    .product-card:hover img {
+        transform: scale(1.05); /* Enlarge image on hover */
+    }
+
+    /* Styles for product names */
+    .product-card h3 {
+        font-size: 1.3rem; /* Larger font size for titles */
+        margin: 0.5rem 0; /* Spacing for titles */
+        color: #333; /* Dark text color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    /* Styles for product colors */
+    .product-card p {
+        font-size: 1rem; /* Font size for descriptions */
+        color: #777; /* Light gray color */
+    }
+
+    /* Link styles to remove underlines */
+    .product-card a {
+        text-decoration: none; /* No underline on links */
+        color: inherit; /* Inherit color from parent */
+    }
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust for smaller screens */
+    }
+}

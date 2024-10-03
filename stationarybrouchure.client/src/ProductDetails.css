@@ -1,0 +1,49 @@
+/* Styles for the product details page */
+.product-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the product details */
+}
+
+    /* Styles for the heading in the product details page */
+    .product-details h2 {
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    /* Styles for the product images */
+    .product-details img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    /* Styles for the product description */
+    .product-details p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    /* Styles for the specifications list */
+    .product-details ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+    }
+
+    .product-details li {
+        font-size: 0.875rem;
+        color: #999;
+        margin-bottom: 0.5rem;
+    }
+
+/* General responsive styling */
+@media (max-width: 600px) {
+    .product-details {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}

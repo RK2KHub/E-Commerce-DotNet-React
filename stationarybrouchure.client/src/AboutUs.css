@@ -1,0 +1,21 @@
+/* Styles for the About Us page */
+.about-us {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the content */
+}
+
+    /* Styles for the heading */
+    .about-us h2 {
+        color: #333;
+    }
+
+    /* Styles for paragraphs */
+    .about-us p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }

@@ -104,7 +104,8 @@ namespace StationaryBrouchure.Server.Controllers
 			string body = emailBody.ToString();
 
 			// Send email
-			string email = "raghulkannalakshmanan@gmail.com"; // Replace with actual recipient email
+			string email = "xxxx@xxxx
+   .com"; // Replace with actual recipient email
 			string subject = $"Checkout Notification - Order recieved for RK Traders from {companyName} and {branchName}";
 
 			await SendEmailAsync(email, subject, body);
@@ -124,12 +125,12 @@ namespace StationaryBrouchure.Server.Controllers
 				using (var smtpClient = new SmtpClient("smtp.gmail.com"))
 				{
 					smtpClient.Port = 587;
-					smtpClient.Credentials = new System.Net.NetworkCredential("r1234kanna@gmail.com", "qxbr ecwp lbkj uecv");
+					smtpClient.Credentials = new System.Net.NetworkCredential("xxxx@xxxx.com", "xxxxx");
 					smtpClient.EnableSsl = true;
 
 					var mailMessage = new MailMessage
 					{
-						From = new MailAddress("r1234kanna@gmail.com"),
+						From = new MailAddress("xxxx@xxxx.com"),
 						Subject = subject,
 						Body = body,
 						IsBodyHtml = false,
